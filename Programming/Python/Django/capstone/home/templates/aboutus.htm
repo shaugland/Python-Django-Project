@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+    <head>
+<!--About Us Page
+-->
+        <title>About Us Page</title>
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+        <script src="{% static 'javascript/main.js' %}" async></script>
+    </head>
+    <body>
+        <div id="links">
+            <ul>
+                <li><a href="{% url 'index' %}">Home Page</a></li>
+                <li><a href="{% url 'order' %}">Custom Pricing</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'customer' %}">Customer Service</a></li>
+                <li><a href="{% url 'location' %}">Where We Are Located</a></li>
+            </ul>
+        </div>
+        <div id="mainContent">
+            <h1>About Us</h1><br />
+            <h3>What We Promise To Provide</h3>
+            <p>At Digital Shield Systems, we provide to provide a new futuristic windshield unlike any other before.</p>
+            <h3>How We Started</h3>
+            <p>We started as a group of 5 friends with a cool idea that we wanted to see hit the market. So we first decided what features we wanted in this product, and we started planning the blueprint for this windshield. After that we made a prototype and tested it out, the first test was a little shakey, but we eventually finished the second prototype, and that was a huge success, it did everything we wanted it to do. Now, we've expanded our main warehouse to downtown Cleveland, and many other resellers close nearby.</p>
+            <h3>Our Partnerships With Car Manufacturers</h3>
+            <p>We've decided to partner up with many car dealerships local to the Cleveland Area. Those of which, you can see on our <a href="order.ejs">Order Page</a>. We use the models of the windshields of the many car options listed, and add our new technology to that model.</p>e
+            <h3>Our Workforce</h3>
+            <p></p>
+        </div>
+    </body>
+</html>

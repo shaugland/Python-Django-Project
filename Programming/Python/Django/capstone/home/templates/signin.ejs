@@ -1,0 +1,28 @@
+<html>
+    <head>
+<!--Sign In Page
+-->
+        <title>Sign In</title>
+        <link href="main.css" rel="stylesheet" />
+        <script src="main.js" async></script>
+        <script src="signIn.js" async></script>
+    </head>
+    <body>
+        <h1>Please Sign In. Don't have an account, <a href="signup.htm">Click Here</a></h1>
+        
+        <label for="email">Email</label>
+        <input class="email" type="text" placeholder="Enter Email" name="email" required />
+        
+        <label for="password" type="password" placeholder="Enter Password" name="psw" required />
+		<input class="password" type="password" placeholder="Enter Email" name="password" required />
+		
+        <label>
+            <input class="repeatPassword" type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px;" />
+            Remember Me
+        </label>
+		<div class="clearfix">
+			<button type="submit" class="signupButton">Sign In</button>
+			<button type="button" class="cancelButton">Cancel</button>
+		</div>
+    </body>
+</html>

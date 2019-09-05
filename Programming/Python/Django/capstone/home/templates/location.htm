@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+<!-- Our Location page
+-->
+        <title>DSS Locations</title>
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" />
+        <script src="{% static 'javascript/main.js' %}" async></script>
+    </head>
+    <body>
+        <div id="links">
+            <ul>
+                <li><a href="{% url 'index' %}">Home Page</a></li>
+                <li><a href="{% url 'order' %}">Custom Pricing</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'customer' %}">Customer Service</a></li>
+                <li><a href="{% url 'location' %}">Where We Are Located</a></li>
+            </ul>
+        </div>
+		<div id="content">
+        	<h1>Our Main Warehouse Location</h1>
+        	<p>We chose our main warehouse location to be in Cleveland, Ohio. It is local to the area, with many car manufacturers nearby. Located near the heart of downtown Cleveland, this location is convenient for locals, and people passing by.</p>
+		</div>
+    </body>
+</html>

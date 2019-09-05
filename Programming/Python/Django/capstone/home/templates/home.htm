@@ -1,0 +1,44 @@
+{% load static %}
+<html lang="en">
+    <head>
+<!--Company Name: DSS
+    Home Page
+-->
+        <title>DSS Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" />
+		<link href="{% static 'css/home.css' %}" rel ="stylesheet" />
+        <script src="{% static 'javascript/main.js' %}" async></script>
+      <!--  <script src="database.js" async></script> -->
+    </head>
+    <body>
+		<img src="{% static 'Pictures/logo.png' %}" alt="DSS Logo" class="logo" />
+        <div id="links">
+            <ul>
+                <li><a href="{% url 'index' %}">Home Page</a></li>
+                <li><a href="{% url 'order' %}">Custom Pricing</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'customer' %}">Customer Service</a></li>
+                <li><a href="{% url 'location' %}">Where We Are Located</a></li>
+            </ul>
+		</div>
+        <h1>Digital Shield Systems (DSS)</h1>
+        <a href="{% url 'signup' %}">Sign Up</a>
+        <div class="paragraphs" id="1">
+            <h3>Our Product</h3>
+            <p>Our product is an innovative windshield that has driver safety as its focal point. This cutting edge technology is ensured to improve your driving awareness on the road, while giving you a simple-easy to use interface on your windshield.</p>
+        </div>
+        <div class="paragraphs" id="2">
+            <h3>Location</h3>
+            <p>Our main warehouse are located in Cleveland, Ohio.<br /><b>Zip Code: 44103</b></p>
+        </div>
+        <input type="checkbox" /><span>  Customer Feedback</span>
+        <div id="bottomBar">
+            <hr />
+            <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i>
+            <a class="btn btn-social-icon btn-twitter">
+            <span class="fa fa-twitter"></span>
+            </a></a><br /><br />
+        </div>
+    </body>
+</html>

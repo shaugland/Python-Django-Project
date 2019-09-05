@@ -1,0 +1,23 @@
+{% load static %}
+<html lang="en">
+    <head>
+<!--Customer Service Page
+-->
+        <title>Customer Service Page</title>
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+        <script src="{% static 'javascript/main.js' %}" async></script>
+    </head>
+    <body>
+        <div id="links">
+            <ul>
+                <li><a href="{% url 'index' %}">Home Page</a></li>
+                <li><a href="{% url 'order' %}">Custom Pricing</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'customer' %}">Customer Service</a></li>
+                <li><a href="{% url 'location' %}">Where We Are Located</a></li>
+            </ul>
+        </div>
+        <h1>Customer Service</h1>
+        <p></p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+    <head>
+<!--Order / See Pricing Options Page
+-->
+        <title>Custom Pricing Options</title>
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+		<script src="js/vehicles.js" async></script>
+        <script src="main.js" async></script>
+    </head>
+    <body>
+        <div id="links">
+            <ul>
+                <li><a href="{% url 'index' %}">Home Page</a></li>
+                <li><a href="{% url 'order' %}">Custom Pricing</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'customer' %}">Customer Service</a></li>
+                <li><a href="{% url 'location' %}">Where We Are Located</a></li>
+            </ul>
+        </div>
+        <h1>Custom Pricing Options</h1>
+        <p>Click on the Make of Your Car:</p>
+        <div id="make" class="dropdown">
+            <input id="makeDropdown" type="button" class="dropbtn" value="Make" />
+            <div id="makeContainer" class="dropdown-content"></div>
+        </div>
+        <div id="model" class="dropdown unshown">
+			<input id="modelDropdown" type="button" class="dropbtn" value="Model" />
+			<div id="modelContainer" class="dropdown-content"></div>
+		</div>
+    </body>
+</html>
